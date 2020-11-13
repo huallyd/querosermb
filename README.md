@@ -32,13 +32,7 @@ Criar um aplicativo para consultar a [CoinAPI.io](https://docs.coinapi.io/#list-
 - gitignore
 
 ### **Processo de Submissão**
-O candidato deverá implementar a solução e enviar um pull request para este repositório com a solução.
-
-O processo de Pull Request funciona da seguinte maneira:
-1.  O candidato fará um fork desse repositório **(não irá clonar direto!)**
-2.  Fará seu projeto nesse fork
-3.  Fará um commit e subirá as alterações para o  **SEU**  fork
-4.  Enviar um pull request pela interface do Github
+O candidato deverá enviar por e-mail a solução.
 
 ### **PS**
 Importante frisar que esse código não será usado em nenhuma hipótese para qualquer fim a não ser o de avaliação dos conhecimentos do candidato.
