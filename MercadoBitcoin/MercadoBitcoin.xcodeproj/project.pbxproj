@@ -3,17 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */; };
+		4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB722562CCA30005B2C7 /* Coordinator.swift */; };
+		4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */; };
+		4047EB782562DE250005B2C7 /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB772562DE250005B2C7 /* CoinListViewController.swift */; };
+		4047EB7A2562DE370005B2C7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB792562DE370005B2C7 /* BaseViewController.swift */; };
+		4047EB802562E6BC0005B2C7 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB7F2562E6BB0005B2C7 /* UIView+Constraints.swift */; };
 		40B519FC2562C28200636463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FB2562C28200636463 /* AppDelegate.swift */; };
-		40B519FE2562C28200636463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FD2562C28200636463 /* SceneDelegate.swift */; };
 		40B51A002562C28200636463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FF2562C28200636463 /* ViewController.swift */; };
 		40B51A032562C28200636463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A012562C28200636463 /* Main.storyboard */; };
 		40B51A052562C28C00636463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A042562C28C00636463 /* Assets.xcassets */; };
 		40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A062562C28C00636463 /* LaunchScreen.storyboard */; };
 		40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */; };
+		7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		4047EB722562CCA30005B2C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCoordinator.swift; sourceTree = "<group>"; };
+		4047EB772562DE250005B2C7 /* CoinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewController.swift; sourceTree = "<group>"; };
+		4047EB792562DE370005B2C7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4047EB7F2562E6BB0005B2C7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		40B519F82562C28200636463 /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B519FB2562C28200636463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40B519FD2562C28200636463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		40B519FF2562C28200636463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40B51A022562C28200636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40B51A042562C28C00636463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +49,9 @@
 		40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoBitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinTests.swift; sourceTree = "<group>"; };
 		40B51A142562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
+		FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +73,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4047EB6E2562CC650005B2C7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB7C2562E6760005B2C7 /* Base */,
+				4047EB7B2562E6640005B2C7 /* CoinList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4047EB6F2562CC6B0005B2C7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4047EB762562DDF90005B2C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB772562DE250005B2C7 /* CoinListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4047EB7B2562E6640005B2C7 /* CoinList */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB762562DDF90005B2C7 /* Controller */,
+				4047EB6F2562CC6B0005B2C7 /* Coordinator */,
+			);
+			path = CoinList;
+			sourceTree = "<group>";
+		};
+		4047EB7C2562E6760005B2C7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB822562E6F40005B2C7 /* Coordinator */,
+				4047EB7E2562E68E0005B2C7 /* Extension */,
+				4047EB7D2562E6890005B2C7 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4047EB7D2562E6890005B2C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB792562DE370005B2C7 /* BaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4047EB7E2562E68E0005B2C7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB812562E6D00005B2C7 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4047EB812562E6D00005B2C7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB7F2562E6BB0005B2C7 /* UIView+Constraints.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		4047EB822562E6F40005B2C7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4047EB722562CCA30005B2C7 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		40B519EF2562C28000636463 = {
 			isa = PBXGroup;
 			children = (
 				40B519FA2562C28200636463 /* MercadoBitcoin */,
 				40B51A112562C28C00636463 /* MercadoBitcoinTests */,
 				40B519F92562C28200636463 /* Products */,
+				ED70F24E7A242915AA40263D /* Pods */,
+				F6EB1B2BF1E997FAF6300963 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +172,9 @@
 		40B519FA2562C28200636463 /* MercadoBitcoin */ = {
 			isa = PBXGroup;
 			children = (
+				4047EB6E2562CC650005B2C7 /* Application */,
+				4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */,
 				40B519FB2562C28200636463 /* AppDelegate.swift */,
-				40B519FD2562C28200636463 /* SceneDelegate.swift */,
 				40B519FF2562C28200636463 /* ViewController.swift */,
 				40B51A012562C28200636463 /* Main.storyboard */,
 				40B51A042562C28C00636463 /* Assets.xcassets */,
@@ -99,6 +193,23 @@
 			path = MercadoBitcoinTests;
 			sourceTree = "<group>";
 		};
+		ED70F24E7A242915AA40263D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */,
+				E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6EB1B2BF1E997FAF6300963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B51A172562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoin" */;
 			buildPhases = (
+				C8F5746E7C4446AFB05C924F /* [CP] Check Pods Manifest.lock */,
 				40B519F42562C28200636463 /* Sources */,
 				40B519F52562C28200636463 /* Frameworks */,
 				40B519F62562C28200636463 /* Resources */,
+				D5CE4565F75E015F97BE7E1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,14 +308,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C8F5746E7C4446AFB05C924F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MercadoBitcoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CE4565F75E015F97BE7E1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40B519F42562C28200636463 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */,
 				40B51A002562C28200636463 /* ViewController.swift in Sources */,
 				40B519FC2562C28200636463 /* AppDelegate.swift in Sources */,
-				40B519FE2562C28200636463 /* SceneDelegate.swift in Sources */,
+				4047EB782562DE250005B2C7 /* CoinListViewController.swift in Sources */,
+				4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */,
+				4047EB7A2562DE370005B2C7 /* BaseViewController.swift in Sources */,
+				4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */,
+				4047EB802562E6BC0005B2C7 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,6 +520,7 @@
 		};
 		40B51A182562C28C00636463 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +538,7 @@
 		};
 		40B51A192562C28C00636463 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
