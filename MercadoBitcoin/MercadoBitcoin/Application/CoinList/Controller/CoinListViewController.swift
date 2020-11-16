@@ -9,14 +9,18 @@
 import UIKit
 
 final class CoinListViewController: BaseViewController {
-    
+
+    private lazy var viewModel: CoinListViewModel = .init(gateway: gateway)
+
     private weak var coordinator: CoinListCoordinator?
-    
+    private let gateway: CoinGateway
+
     // MARK: Initializer
     
-    init(coordinator: CoinListCoordinator?) {
+    init(coordinator: CoinListCoordinator?, gateway: CoinGateway) {
         self.coordinator = coordinator
-        
+        self.gateway = gateway
+
         super.init()
     }
     
@@ -27,8 +31,9 @@ final class CoinListViewController: BaseViewController {
 
         setupView()
         setupLayout()
+        requestCoins()
     }
-    
+
     // MARK: Private functions
     
     private func setupView() {
@@ -37,6 +42,12 @@ final class CoinListViewController: BaseViewController {
     
     private func setupLayout() {
         
+    }
+    
+    private func requestCoins() {
+        viewModel.request { viewModel in
+            
+        }
     }
 
 }

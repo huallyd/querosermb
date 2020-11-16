@@ -18,7 +18,7 @@ final class LastPriceView: UIView {
         
         return label
     }()
-    
+
     private let valueLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black

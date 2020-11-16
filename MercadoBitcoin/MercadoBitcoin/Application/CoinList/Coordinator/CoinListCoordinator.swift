@@ -15,8 +15,6 @@ protocol CoinListCoordinator: AnyObject {
 
 final class CoinListViewCoordinator {
     
-    private let viewController = ViewController()
-    
     private let navigationController: UINavigationController
     
     // MARK: Initializer
@@ -32,6 +30,7 @@ final class CoinListViewCoordinator {
 extension CoinListViewCoordinator: Coordinator {
     
     func start() {
+        let viewController = CoinListViewControllerFactory.make(coordinator: self)
         navigationController.pushViewController(viewController, animated: true)
     }
 
