@@ -10,12 +10,25 @@ import UIKit
 
 extension UIView {
 
-    func addSubview<T: UIView>(_ view: T, constraints: [NSLayoutConstraint]) {
+    func addSubview(_ view: UIView, constraints: [NSLayoutConstraint]) {
         addSubview(view)
 
         view.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    func addSubview(fillWith view: UIView) {
+        addSubview(view)
+
+        view.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: topAnchor),
+            view.leadingAnchor.constraint(equalTo: leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: trailingAnchor),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
     }
 
 }
