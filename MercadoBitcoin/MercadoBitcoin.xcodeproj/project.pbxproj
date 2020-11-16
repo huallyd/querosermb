@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40B519FC2562C28200636463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FB2562C28200636463 /* AppDelegate.swift */; };
+		40B519FE2562C28200636463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FD2562C28200636463 /* SceneDelegate.swift */; };
+		40B51A002562C28200636463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FF2562C28200636463 /* ViewController.swift */; };
+		40B51A032562C28200636463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A012562C28200636463 /* Main.storyboard */; };
+		40B51A052562C28C00636463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A042562C28C00636463 /* Assets.xcassets */; };
+		40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A062562C28C00636463 /* LaunchScreen.storyboard */; };
+		40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40B51A0F2562C28C00636463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B519F02562C28100636463 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40B519F72562C28200636463;
+			remoteInfo = MercadoBitcoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40B519F82562C28200636463 /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B519FB2562C28200636463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40B519FD2562C28200636463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		40B519FF2562C28200636463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40B51A022562C28200636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40B51A042562C28C00636463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40B51A072562C28C00636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40B51A092562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoBitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinTests.swift; sourceTree = "<group>"; };
+		40B51A142562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40B519F52562C28200636463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B51A0B2562C28C00636463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40B519EF2562C28000636463 = {
+			isa = PBXGroup;
+			children = (
+				40B519FA2562C28200636463 /* MercadoBitcoin */,
+				40B51A112562C28C00636463 /* MercadoBitcoinTests */,
+				40B519F92562C28200636463 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40B519F92562C28200636463 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40B519F82562C28200636463 /* MercadoBitcoin.app */,
+				40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40B519FA2562C28200636463 /* MercadoBitcoin */ = {
+			isa = PBXGroup;
+			children = (
+				40B519FB2562C28200636463 /* AppDelegate.swift */,
+				40B519FD2562C28200636463 /* SceneDelegate.swift */,
+				40B519FF2562C28200636463 /* ViewController.swift */,
+				40B51A012562C28200636463 /* Main.storyboard */,
+				40B51A042562C28C00636463 /* Assets.xcassets */,
+				40B51A062562C28C00636463 /* LaunchScreen.storyboard */,
+				40B51A092562C28C00636463 /* Info.plist */,
+			);
+			path = MercadoBitcoin;
+			sourceTree = "<group>";
+		};
+		40B51A112562C28C00636463 /* MercadoBitcoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */,
+				40B51A142562C28C00636463 /* Info.plist */,
+			);
+			path = MercadoBitcoinTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40B519F72562C28200636463 /* MercadoBitcoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B51A172562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoin" */;
+			buildPhases = (
+				40B519F42562C28200636463 /* Sources */,
+				40B519F52562C28200636463 /* Frameworks */,
+				40B519F62562C28200636463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MercadoBitcoin;
+			productName = MercadoBitcoin;
+			productReference = 40B519F82562C28200636463 /* MercadoBitcoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40B51A0D2562C28C00636463 /* MercadoBitcoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B51A1A2562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoinTests" */;
+			buildPhases = (
+				40B51A0A2562C28C00636463 /* Sources */,
+				40B51A0B2562C28C00636463 /* Frameworks */,
+				40B51A0C2562C28C00636463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40B51A102562C28C00636463 /* PBXTargetDependency */,
+			);
+			name = MercadoBitcoinTests;
+			productName = MercadoBitcoinTests;
+			productReference = 40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40B519F02562C28100636463 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Huallyd Smadi";
+				TargetAttributes = {
+					40B519F72562C28200636463 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					40B51A0D2562C28C00636463 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 40B519F72562C28200636463;
+					};
+				};
+			};
+			buildConfigurationList = 40B519F32562C28100636463 /* Build configuration list for PBXProject "MercadoBitcoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40B519EF2562C28000636463;
+			productRefGroup = 40B519F92562C28200636463 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40B519F72562C28200636463 /* MercadoBitcoin */,
+				40B51A0D2562C28C00636463 /* MercadoBitcoinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40B519F62562C28200636463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */,
+				40B51A052562C28C00636463 /* Assets.xcassets in Resources */,
+				40B51A032562C28200636463 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B51A0C2562C28C00636463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40B519F42562C28200636463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B51A002562C28200636463 /* ViewController.swift in Sources */,
+				40B519FC2562C28200636463 /* AppDelegate.swift in Sources */,
+				40B519FE2562C28200636463 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B51A0A2562C28C00636463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40B51A102562C28C00636463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40B519F72562C28200636463 /* MercadoBitcoin */;
+			targetProxy = 40B51A0F2562C28C00636463 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40B51A012562C28200636463 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40B51A022562C28200636463 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40B51A062562C28C00636463 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40B51A072562C28C00636463 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40B51A152562C28C00636463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40B51A162562C28C00636463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40B51A182562C28C00636463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hualyd.smadi.MercadoBitcoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40B51A192562C28C00636463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hualyd.smadi.MercadoBitcoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40B51A1B2562C28C00636463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoBitcoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hualyd.smadi.MercadoBitcoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoBitcoin.app/MercadoBitcoin";
+			};
+			name = Debug;
+		};
+		40B51A1C2562C28C00636463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoBitcoinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hualyd.smadi.MercadoBitcoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoBitcoin.app/MercadoBitcoin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40B519F32562C28100636463 /* Build configuration list for PBXProject "MercadoBitcoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B51A152562C28C00636463 /* Debug */,
+				40B51A162562C28C00636463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B51A172562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B51A182562C28C00636463 /* Debug */,
+				40B51A192562C28C00636463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B51A1A2562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B51A1B2562C28C00636463 /* Debug */,
+				40B51A1C2562C28C00636463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40B519F02562C28100636463 /* Project object */;
+}

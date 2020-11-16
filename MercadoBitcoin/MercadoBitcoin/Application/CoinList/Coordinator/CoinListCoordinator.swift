@@ -1,0 +1,52 @@
+//
+//  CoinListCoordinator.swift
+//  MercadoBitcoin
+//
+//  Created by Huallyd Smadi on 16/11/20.
+//  Copyright © 2020 Huallyd Smadi. All rights reserved.
+//
+
+import UIKit
+
+protocol CoinListCoordinator: AnyObject {
+    func showDetail()
+    func back()
+}
+
+final class CoinListViewCoordinator {
+    
+    private let viewController = ViewController()
+    
+    private let navigationController: UINavigationController
+    
+    // MARK: Initializer
+
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+
+}
+
+// MARK: Coordinator conforms
+
+extension CoinListViewCoordinator: Coordinator {
+    
+    func start() {
+        navigationController.pushViewController(viewController, animated: true)
+    }
+
+}
+
+// MARK: CoinListCoordinator conforms
+
+extension CoinListViewCoordinator: CoinListCoordinator {
+    
+    func showDetail() {
+        
+    }
+    
+    func back() {
+        navigationController.popViewController(animated: true)
+    }
+
+}
