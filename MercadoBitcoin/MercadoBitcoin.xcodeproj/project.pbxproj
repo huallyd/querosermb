@@ -34,6 +34,7 @@
 		40D2EBE525630F8300B21932 /* CoinListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBE425630F8300B21932 /* CoinListViewControllerFactory.swift */; };
 		40F7059C25640AD6005A5C2E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F7059E25640AD6005A5C2E /* Localizable.strings */; };
 		40F705A225640B4D005A5C2E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705A125640B4D005A5C2E /* Strings.swift */; };
+		40F705A525640BB8005A5C2E /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705A425640BB8005A5C2E /* String+Localizable.swift */; };
 		7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		40F7059D25640AD6005A5C2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		40F7059F25640AFF005A5C2E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		40F705A125640B4D005A5C2E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		40F705A425640BB8005A5C2E /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 		BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
 		FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		4047EB7E2562E68E0005B2C7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				40F705A325640BAA005A5C2E /* String */,
 				4047EB912562F0FB0005B2C7 /* Int */,
 				4047EB872562EA070005B2C7 /* UITableView */,
 				4047EB812562E6D00005B2C7 /* UIView */,
@@ -360,6 +363,14 @@
 			path = Swiftgen;
 			sourceTree = "<group>";
 		};
+		40F705A325640BAA005A5C2E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				40F705A425640BB8005A5C2E /* String+Localizable.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		ED70F24E7A242915AA40263D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F705A525640BB8005A5C2E /* String+Localizable.swift in Sources */,
 				40CC8E6F25637F7800C6C4E9 /* CoinIconURL.swift in Sources */,
 				4047EB892562EA3D0005B2C7 /* UITableView+Reusable.swift in Sources */,
 				4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */,
