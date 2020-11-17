@@ -86,7 +86,7 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
     
     func bind(_ viewModel: CoinViewModel) {
         titleLabel.text = viewModel.title
-        valueLabel.text = viewModel.currencyValue
+        valueLabel.text = viewModel.valueDay
 
         viewModel.requestImage(of: iconCoinImageView)
     }

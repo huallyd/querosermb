@@ -33,16 +33,19 @@ final class CoinListViewController: BaseViewController {
         return .init(tableView: tableView, didSelectCompletion: didSelectCompletion)
     }()
 
-    private lazy var viewModel: CoinListViewModel = .init(gateway: gateway)
+    private lazy var viewModel: CoinListViewModel = .init(gateway: gateway,
+                                                          imageService: imageService)
 
     private weak var coordinator: CoinListCoordinator?
     private let gateway: CoinGateway
+    private let imageService: ImageService
 
     // MARK: Initializer
     
-    init(coordinator: CoinListCoordinator?, gateway: CoinGateway) {
+    init(coordinator: CoinListCoordinator?, gateway: CoinGateway, imageService: ImageService) {
         self.coordinator = coordinator
         self.gateway = gateway
+        self.imageService = imageService
 
         super.init()
     }
@@ -91,7 +94,7 @@ final class CoinListViewController: BaseViewController {
     }
 
     private func didSelect(viewModel: CoinViewModel) {
-        
+        coordinator?.showDetail(viewModel: viewModel)
     }
 
 }

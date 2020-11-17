@@ -11,7 +11,12 @@ import UIKit
 final class CoinListViewControllerFactory: NSObject {
     
     static func make(coordinator: CoinListViewCoordinator) -> CoinListViewController {
-        .init(coordinator: coordinator, gateway: StandardCoinGateway.shared)
+        let viewController = CoinListViewController(coordinator: coordinator,
+                                                    gateway: StandardCoinGateway.shared,
+                                                    imageService: StandardImageService.shared)
+        viewController.title = Strings.CoinList.navigationTitle.localized
+        
+        return viewController
     }
 
 }

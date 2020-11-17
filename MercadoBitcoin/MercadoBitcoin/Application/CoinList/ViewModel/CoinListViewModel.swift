@@ -10,13 +10,15 @@ import UIKit
 
 struct CoinListViewModel {
     private let gateway: CoinGateway
+    private let imageService: ImageService
     
     // MARK: Initializer
     
-    init(gateway: CoinGateway) {
+    init(gateway: CoinGateway, imageService: ImageService) {
         self.gateway = gateway
+        self.imageService = imageService
     }
-    
+
     // MARK: Private function
     
     private func resquestImages(entities: [Coin], completion: @escaping ([CoinViewModel]) -> Void) {
@@ -26,7 +28,7 @@ struct CoinListViewModel {
 
             completion(entities.map { coin -> CoinViewModel in
                 let url = (coinsUrl.first(where: {$0.id == coin.id}))?.url ?? ""
-                return .init(entity: coin, url: url)
+                return .init(entity: coin, url: url, imageService: self.imageService)
             })
 
             case .failure(_): break

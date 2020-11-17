@@ -10,12 +10,14 @@ import UIKit
 
 final class ApplicationCoordinator {
     
-    private let window: UIWindow
+    private lazy var listCoordinator: Coordinator = CoinListViewCoordinator(navigationController: rootNavigationController)
+
+    private weak var window: UIWindow?
     private let rootNavigationController: UINavigationController
     
     // MARK: Initializer
 
-    init(window: UIWindow) {
+    init(window: UIWindow?) {
         self.window = window
         rootNavigationController = .init()
     }
@@ -27,10 +29,10 @@ final class ApplicationCoordinator {
 extension ApplicationCoordinator: Coordinator {
     
     func start() {
-        window.rootViewController = rootNavigationController
-        window.makeKeyAndVisible()
-        
-        CoinListViewCoordinator(navigationController: rootNavigationController).start()
+        window?.rootViewController = rootNavigationController
+        window?.makeKeyAndVisible()
+
+        listCoordinator.start()
     }
 
 }

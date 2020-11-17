@@ -7,3 +7,11 @@
 */
 
 "coinList.navigationTitle" = "Overview";
+"coinDetail.navigationTitle" = "Detail";
+"coinDetail.title.id" = "ID:";
+"coinDetail.title.name" = "Name:";
+"coinDetail.title.startDate" = "Inicial Date:";
+"coinDetail.title.endDate" = "Final Date:";
+"coinDetail.title.volumeHour" = "Volume at hour:";
+"coinDetail.title.volumeDay" = "Volume at day:";
+"coinDetail.title.volumeMonth" = "Volume at month:";

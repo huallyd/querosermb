@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CoinListCoordinator: AnyObject {
-    func showDetail()
+    func showDetail(viewModel: CoinViewModel)
     func back()
 }
 
@@ -31,7 +31,6 @@ extension CoinListViewCoordinator: Coordinator {
     
     func start() {
         let viewController = CoinListViewControllerFactory.make(coordinator: self)
-        viewController.title = Strings.CoinList.navigationTitle.localized
         navigationController.pushViewController(viewController, animated: true)
     }
 
@@ -41,8 +40,10 @@ extension CoinListViewCoordinator: Coordinator {
 
 extension CoinListViewCoordinator: CoinListCoordinator {
     
-    func showDetail() {
-        
+    func showDetail(viewModel: CoinViewModel) {
+        let viewController = CoinDetailViewControllerFactory.make(coordinator: self,
+                                                                  coinViewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
     
     func back() {

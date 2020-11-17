@@ -7,14 +7,52 @@
 //
 
 import UIKit
-import Kingfisher
 
 struct CoinViewModel {
     var title: String {
         "\(name) (\(id))"
     }
 
-    var currencyValue: String {
+    let id: String
+    let name: String
+    let valueHour: String
+    let valueDay: String
+    let valueMonth: String
+    let url: String?
+    let startDate: String?
+    let endDate: String?
+    
+    private let imageService: ImageService?
+
+    // MARK: Initializers
+
+    init(entity: Coin) {
+        id = entity.id
+        name = entity.name
+        valueHour = CoinViewModel.setupCurrency(at: entity.valueHour)
+        valueDay = CoinViewModel.setupCurrency(at: entity.valueDay)
+        valueMonth = CoinViewModel.setupCurrency(at: entity.valueMonth)
+        startDate = entity.startDate
+        endDate = entity.endDate
+        url = nil
+        imageService = nil
+    }
+
+    init(entity: Coin, url: String, imageService: ImageService) {
+        id = entity.id
+        name = entity.name
+        valueHour = CoinViewModel.setupCurrency(at: entity.valueHour)
+        valueDay = CoinViewModel.setupCurrency(at: entity.valueDay)
+        valueMonth = CoinViewModel.setupCurrency(at: entity.valueMonth)
+        startDate = entity.startDate
+        endDate = entity.endDate
+        self.url = url
+        self.imageService = imageService
+    }
+    
+    // MARK: Private function
+
+    private static func setupCurrency(at value: Double) -> String {
         let formatter = NumberFormatter()
         formatter.locale = .init(identifier: "en_US")
         formatter.numberStyle = .currency
@@ -22,31 +60,9 @@ struct CoinViewModel {
         return formatter.string(from: NSNumber(value: value)) ?? ""
     }
 
-    let id: String
-    let name: String
-    let value: Double
-    let url: String?
-
-    // MARK: Initializers
-
-    init(entity: Coin) {
-        id = entity.id
-        name = entity.name
-        value = entity.valueDay
-        url = nil
-    }
-    
-    init(entity: Coin, url: String) {
-        id = entity.id
-        name = entity.name
-        value = entity.valueDay
-        self.url = url
-    }
-
     // MARK: Function
 
     func requestImage(of imageView: UIImageView) {
-        let url = URL(string: self.url ?? "")
-        imageView.kf.setImage(with: url, options: [.transition(.fade(0.2)), .cacheOriginalImage])
+        imageService?.request(url: url, imageView: imageView)
     }
 }

@@ -11,6 +11,27 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum Strings {
 
+  internal enum CoinDetail {
+    /// Detail
+    internal static let navigationTitle = Strings.tr("Localizable", "coinDetail.navigationTitle")
+    internal enum Title {
+      /// Final Date:
+      internal static let endDate = Strings.tr("Localizable", "coinDetail.title.endDate")
+      /// ID:
+      internal static let id = Strings.tr("Localizable", "coinDetail.title.id")
+      /// Name:
+      internal static let name = Strings.tr("Localizable", "coinDetail.title.name")
+      /// Inicial Date:
+      internal static let startDate = Strings.tr("Localizable", "coinDetail.title.startDate")
+      /// Volume at day:
+      internal static let volumeDay = Strings.tr("Localizable", "coinDetail.title.volumeDay")
+      /// Volume at hour:
+      internal static let volumeHour = Strings.tr("Localizable", "coinDetail.title.volumeHour")
+      /// Volume at month:
+      internal static let volumeMonth = Strings.tr("Localizable", "coinDetail.title.volumeMonth")
+    }
+  }
+
   internal enum CoinList {
     /// Overview
     internal static let navigationTitle = Strings.tr("Localizable", "coinList.navigationTitle")
