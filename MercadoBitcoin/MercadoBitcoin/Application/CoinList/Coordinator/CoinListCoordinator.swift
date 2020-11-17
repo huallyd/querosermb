@@ -31,6 +31,7 @@ extension CoinListViewCoordinator: Coordinator {
     
     func start() {
         let viewController = CoinListViewControllerFactory.make(coordinator: self)
+        viewController.title = "Visão geral"
         navigationController.pushViewController(viewController, animated: true)
     }
 

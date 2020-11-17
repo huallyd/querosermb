@@ -17,19 +17,19 @@ struct CoinListViewModel {
         self.gateway = gateway
     }
     
-    // MARK: Private functions
+    // MARK: Private function
     
     private func resquestImages(entities: [Coin], completion: @escaping ([CoinViewModel]) -> Void) {
         gateway.requestUrls { result in
             switch result {
             case let .success(coinsUrl):
-                
-            completion(entities.map { (coin) -> CoinViewModel in
+
+            completion(entities.map { coin -> CoinViewModel in
                 let url = (coinsUrl.first(where: {$0.id == coin.id}))?.url ?? ""
                 return .init(entity: coin, url: url)
             })
 
-            case let .failure(error): break
+            case .failure(_): break
             }
         }
     }

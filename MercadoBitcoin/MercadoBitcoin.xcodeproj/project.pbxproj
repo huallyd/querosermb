@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40077DCC25638C9800C6ACBA /* UITableView+DeselectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40077DCB25638C9800C6ACBA /* UITableView+DeselectRow.swift */; };
 		4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */; };
 		4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB722562CCA30005B2C7 /* Coordinator.swift */; };
 		4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40077DCB25638C9800C6ACBA /* UITableView+DeselectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DeselectRow.swift"; sourceTree = "<group>"; };
 		4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		4047EB722562CCA30005B2C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCoordinator.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				4047EB882562EA3D0005B2C7 /* UITableView+Reusable.swift */,
+				40077DCB25638C9800C6ACBA /* UITableView+DeselectRow.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				40CC8E6F25637F7800C6C4E9 /* CoinIconURL.swift in Sources */,
 				4047EB892562EA3D0005B2C7 /* UITableView+Reusable.swift in Sources */,
 				4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */,
+				40077DCC25638C9800C6ACBA /* UITableView+DeselectRow.swift in Sources */,
 				40D2EBE525630F8300B21932 /* CoinListViewControllerFactory.swift in Sources */,
 				40D2EBE225630DD100B21932 /* CoinViewModel.swift in Sources */,
 				40B51A002562C28200636463 /* ViewController.swift in Sources */,

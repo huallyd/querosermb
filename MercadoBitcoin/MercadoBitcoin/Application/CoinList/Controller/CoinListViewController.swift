@@ -10,6 +10,14 @@ import UIKit
 
 final class CoinListViewController: BaseViewController {
     
+    private let refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .orange
+        refreshControl.addTarget(self, action: #selector(requestCoins), for: .valueChanged)
+
+        return refreshControl
+    }()
+
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.showsVerticalScrollIndicator = false
@@ -38,7 +46,7 @@ final class CoinListViewController: BaseViewController {
 
         super.init()
     }
-    
+
     // MARK: Life cycle
 
     override func viewDidLoad() {
@@ -46,7 +54,14 @@ final class CoinListViewController: BaseViewController {
 
         setupView()
         setupLayout()
+        setupRefreshControl()
         requestCoins()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        tableView.deselectRow()
     }
 
     // MARK: Private functions
@@ -64,12 +79,17 @@ final class CoinListViewController: BaseViewController {
         ])
     }
 
-    private func requestCoins() {
+    @objc private func requestCoins() {
         viewModel.request { [weak self] viewModels in
             self?.dataSource.setup(viewModels: viewModels)
+            self?.refreshControl.endRefreshing()
         }
     }
-    
+
+    private func setupRefreshControl() {
+        tableView.refreshControl = refreshControl
+    }
+
     private func didSelect(viewModel: CoinViewModel) {
         
     }
