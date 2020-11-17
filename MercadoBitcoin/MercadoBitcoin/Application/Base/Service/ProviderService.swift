@@ -15,7 +15,7 @@ enum ServiceError: Error {
 }
 
 protocol ProviderService {
-    func request<T: Decodable>(url: String, method: HTTPMethod, completion: @escaping (Result<([T]), Error>) -> Void)
+    func getRequest<T: Decodable>(url: String, completion: @escaping (Result<([T]), Error>) -> Void)
 }
 
 struct AlamofireProviderService: ProviderService {
@@ -25,7 +25,7 @@ struct AlamofireProviderService: ProviderService {
 
     private init() {}
 
-    func request<T>(url: String, method: HTTPMethod, completion: @escaping (Result<([T]), Error>) -> Void) where T : Decodable {
+    func getRequest<T>(url: String, completion: @escaping (Result<([T]), Error>) -> Void) where T : Decodable {
         guard let url = URL(string: url) else { return }
         
         AF.request(url, method: .get).response { response in

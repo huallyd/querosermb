@@ -323,6 +323,7 @@
 		40B51A112562C28C00636463 /* MercadoBitcoinTests */ = {
 			isa = PBXGroup;
 			children = (
+				40F705BA25645964005A5C2E /* CoinList */,
 				40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */,
 				40B51A142562C28C00636463 /* Info.plist */,
 			);
@@ -398,6 +399,21 @@
 				40F705B825645411005A5C2E /* Loadable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		40F705BA25645964005A5C2E /* CoinList */ = {
+			isa = PBXGroup;
+			children = (
+				40F705BB25645995005A5C2E /* Mock */,
+			);
+			path = CoinList;
+			sourceTree = "<group>";
+		};
+		40F705BB25645995005A5C2E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		ED70F24E7A242915AA40263D /* Pods */ = {
