@@ -1,0 +1,8 @@
+output_dir: 'MercadoBitcoin/Resources/SwiftGen'
+
+strings:
+  - inputs: MercadoBitcoin/Resources/en.lproj/Localizable.strings
+    templateName: structured-swift5
+    output: Strings.swift
+    params:
+      enumName: Strings

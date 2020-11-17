@@ -32,6 +32,8 @@
 		40D2EBE025630B4400B21932 /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBDF25630B4400B21932 /* CoinListViewModel.swift */; };
 		40D2EBE225630DD100B21932 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBE125630DD100B21932 /* CoinViewModel.swift */; };
 		40D2EBE525630F8300B21932 /* CoinListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBE425630F8300B21932 /* CoinListViewControllerFactory.swift */; };
+		40F7059C25640AD6005A5C2E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F7059E25640AD6005A5C2E /* Localizable.strings */; };
+		40F705A225640B4D005A5C2E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705A125640B4D005A5C2E /* Strings.swift */; };
 		7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,9 @@
 		40D2EBDF25630B4400B21932 /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
 		40D2EBE125630DD100B21932 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 		40D2EBE425630F8300B21932 /* CoinListViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewControllerFactory.swift; sourceTree = "<group>"; };
+		40F7059D25640AD6005A5C2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		40F7059F25640AFF005A5C2E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		40F705A125640B4D005A5C2E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
 		FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +111,6 @@
 		4047EB6E2562CC650005B2C7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4047EB8A2562EBA50005B2C7 /* Resources */,
 				4047EB7C2562E6760005B2C7 /* Base */,
 				4047EB7B2562E6640005B2C7 /* CoinList */,
 			);
@@ -218,7 +222,9 @@
 		4047EB8A2562EBA50005B2C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				40F7059825640AB2005A5C2E /* Swiftgen */,
 				4047EB8B2562EBC30005B2C7 /* Font */,
+				40F7059E25640AD6005A5C2E /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				4047EB6E2562CC650005B2C7 /* Application */,
+				4047EB8A2562EBA50005B2C7 /* Resources */,
 				4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */,
 				40B519FB2562C28200636463 /* AppDelegate.swift */,
 				40B519FF2562C28200636463 /* ViewController.swift */,
@@ -345,6 +352,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		40F7059825640AB2005A5C2E /* Swiftgen */ = {
+			isa = PBXGroup;
+			children = (
+				40F705A125640B4D005A5C2E /* Strings.swift */,
+			);
+			path = Swiftgen;
+			sourceTree = "<group>";
+		};
 		ED70F24E7A242915AA40263D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +388,7 @@
 				40B519F42562C28200636463 /* Sources */,
 				40B519F52562C28200636463 /* Frameworks */,
 				40B519F62562C28200636463 /* Resources */,
+				40F705A025640B22005A5C2E /* SwiftGen */,
 				D5CE4565F75E015F97BE7E1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -428,6 +444,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 40B519EF2562C28000636463;
 			productRefGroup = 40B519F92562C28200636463 /* Products */;
@@ -446,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */,
+				40F7059C25640AD6005A5C2E /* Localizable.strings in Resources */,
 				40B51A052562C28C00636463 /* Assets.xcassets in Resources */,
 				40B51A032562C28200636463 /* Main.storyboard in Resources */,
 			);
@@ -461,6 +479,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		40F705A025640B22005A5C2E /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
 		C8F5746E7C4446AFB05C924F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,6 +555,7 @@
 				40D2EBDD256303F000B21932 /* ProviderService.swift in Sources */,
 				40B519FC2562C28200636463 /* AppDelegate.swift in Sources */,
 				4047EB782562DE250005B2C7 /* CoinListViewController.swift in Sources */,
+				40F705A225640B4D005A5C2E /* Strings.swift in Sources */,
 				4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */,
 				4047EB7A2562DE370005B2C7 /* BaseViewController.swift in Sources */,
 				4047EB862562E9FE0005B2C7 /* CoinTableViewCell.swift in Sources */,
@@ -566,6 +603,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		40F7059E25640AD6005A5C2E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40F7059D25640AD6005A5C2E /* en */,
+				40F7059F25640AFF005A5C2E /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -573,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -633,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
