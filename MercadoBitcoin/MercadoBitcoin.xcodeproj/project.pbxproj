@@ -17,7 +17,6 @@
 		4047EB862562E9FE0005B2C7 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB852562E9FE0005B2C7 /* CoinTableViewCell.swift */; };
 		4047EB892562EA3D0005B2C7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB882562EA3D0005B2C7 /* UITableView+Reusable.swift */; };
 		4047EB932562F1140005B2C7 /* Int+SpacingUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB922562F1140005B2C7 /* Int+SpacingUnit.swift */; };
-		4047EB962562F3C70005B2C7 /* LastPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB952562F3C70005B2C7 /* LastPriceView.swift */; };
 		40B519FC2562C28200636463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FB2562C28200636463 /* AppDelegate.swift */; };
 		40B51A002562C28200636463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FF2562C28200636463 /* ViewController.swift */; };
 		40B51A032562C28200636463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A012562C28200636463 /* Main.storyboard */; };
@@ -42,6 +41,7 @@
 		40F705AF25641030005A5C2E /* DetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705AE25641030005A5C2E /* DetailViews.swift */; };
 		40F705B125641B09005A5C2E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B025641B09005A5C2E /* ImageService.swift */; };
 		40F705B325641EE8005A5C2E /* CoinDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B225641EE8005A5C2E /* CoinDetailViewControllerFactory.swift */; };
+		40F705B925645411005A5C2E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B825645411005A5C2E /* Loadable.swift */; };
 		7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,6 @@
 		4047EB8F2562EC130005B2C7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		4047EB902562EC130005B2C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4047EB922562F1140005B2C7 /* Int+SpacingUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SpacingUnit.swift"; sourceTree = "<group>"; };
-		4047EB952562F3C70005B2C7 /* LastPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPriceView.swift; sourceTree = "<group>"; };
 		40B519F82562C28200636463 /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B519FB2562C28200636463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B519FF2562C28200636463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		40F705AE25641030005A5C2E /* DetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViews.swift; sourceTree = "<group>"; };
 		40F705B025641B09005A5C2E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		40F705B225641EE8005A5C2E /* CoinDetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinDetailViewControllerFactory.swift; path = ../../../../../../../../../../CoinDetailViewControllerFactory.swift; sourceTree = "<group>"; };
+		40F705B825645411005A5C2E /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
 		FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 				40D2EBDE25630B2B00B21932 /* ViewModel */,
 				40D2EBD62562FFE000B21932 /* Service */,
 				4047EB842562E9AF0005B2C7 /* View */,
-				4047EB762562DDF90005B2C7 /* Controller */,
 				4047EB6F2562CC6B0005B2C7 /* Coordinator */,
+				4047EB762562DDF90005B2C7 /* Controller */,
 				4047EB832562E9480005B2C7 /* DataSource */,
 			);
 			path = CoinList;
@@ -168,6 +168,7 @@
 		4047EB7C2562E6760005B2C7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				40F705B7256453FB005A5C2E /* Protocol */,
 				40D2EBDB256303E300B21932 /* Service */,
 				4047EB822562E6F40005B2C7 /* Coordinator */,
 				4047EB7E2562E68E0005B2C7 /* Extension */,
@@ -223,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				4047EB942562F3530005B2C7 /* Cell */,
-				4047EB952562F3C70005B2C7 /* LastPriceView.swift */,
 				40F705AC25640F44005A5C2E /* DetailView.swift */,
 				40F705AE25641030005A5C2E /* DetailViews.swift */,
 			);
@@ -390,6 +390,14 @@
 				40F705A425640BB8005A5C2E /* String+Localizable.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		40F705B7256453FB005A5C2E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				40F705B825645411005A5C2E /* Loadable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		ED70F24E7A242915AA40263D /* Pods */ = {
@@ -600,10 +608,10 @@
 				40F705AD25640F44005A5C2E /* DetailView.swift in Sources */,
 				40F705A925640EB5005A5C2E /* CoinDetailViewModel.swift in Sources */,
 				40D2EBD82563015A00B21932 /* Coin.swift in Sources */,
-				4047EB962562F3C70005B2C7 /* LastPriceView.swift in Sources */,
 				4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */,
 				40CC8E6C25631EA400C6C4E9 /* CoinListDataSource.swift in Sources */,
 				4047EB932562F1140005B2C7 /* Int+SpacingUnit.swift in Sources */,
+				40F705B925645411005A5C2E /* Loadable.swift in Sources */,
 				4047EB802562E6BC0005B2C7 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

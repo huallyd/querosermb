@@ -11,12 +11,14 @@ import UIKit
 struct CoinListViewModel {
     private let gateway: CoinGateway
     private let imageService: ImageService
+    private weak var loadable: Loadable?
     
     // MARK: Initializer
     
-    init(gateway: CoinGateway, imageService: ImageService) {
+    init(gateway: CoinGateway, imageService: ImageService, loadable: Loadable) {
         self.gateway = gateway
         self.imageService = imageService
+        self.loadable = loadable
     }
 
     // MARK: Private function
@@ -39,7 +41,10 @@ struct CoinListViewModel {
     // MARK: Function
     
     func request(completion: @escaping ([CoinViewModel]) -> Void) {
+        loadable?.load()
+
         gateway.requestCoins { result in
+            self.loadable?.unload()
             switch result {
             case let .success(coins):
                 completion(coins.map(CoinViewModel.init))

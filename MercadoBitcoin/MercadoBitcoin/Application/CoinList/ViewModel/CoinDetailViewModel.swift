@@ -37,10 +37,10 @@ struct CoinDetailViewModel {
             values.append(endDate)
         }
         
-        titles.append(contentsOf: [texts.volumeHour, texts.volumeDay, texts.volumeMonth])
+        titles.append(contentsOf: [texts.volumeHour.localized, texts.volumeDay.localized, texts.volumeMonth.localized])
         values.append(contentsOf: [coinViewModel.valueHour, coinViewModel.valueDay,
                                    coinViewModel.valueMonth])
-        
+
         return zip(titles, values).map(DetailViewModel.init)
     }
     

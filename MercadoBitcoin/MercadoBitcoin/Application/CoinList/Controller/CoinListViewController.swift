@@ -34,7 +34,8 @@ final class CoinListViewController: BaseViewController {
     }()
 
     private lazy var viewModel: CoinListViewModel = .init(gateway: gateway,
-                                                          imageService: imageService)
+                                                          imageService: imageService,
+                                                          loadable: self)
 
     private weak var coordinator: CoinListCoordinator?
     private let gateway: CoinGateway

@@ -45,8 +45,6 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
 
         return stackView
     }()
-    
-//    private let lastPriceView: LastPriceView = .init()
 
     // MARK: Initializer
 
