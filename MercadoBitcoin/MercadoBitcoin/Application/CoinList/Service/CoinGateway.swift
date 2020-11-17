@@ -11,6 +11,7 @@ import Alamofire
 
 protocol CoinGateway {
     func requestCoins(completion: @escaping (Result<([Coin]), Error>) -> Void)
+    func requestUrls(completion: @escaping (Result<([CoinIconURL]), Error>) ->Void)
 }
 
 final class StandardCoinGateway: CoinGateway {
@@ -30,6 +31,16 @@ final class StandardCoinGateway: CoinGateway {
         provider.request(url: baseUrl, method: .get) { (entities: [Coin]?) in
             if let coins = entities {
                 completion(.success(coins))
+            }
+        }
+    }
+    
+    func requestUrls(completion: @escaping (Result<([CoinIconURL]), Error>) ->Void) {
+        let url = baseUrl + "/icons/500"
+
+        provider.request(url: url, method: .get) { (entities: [CoinIconURL]?) in
+            if let coinIcons = entities {
+                completion(.success(coinIcons))
             }
         }
     }

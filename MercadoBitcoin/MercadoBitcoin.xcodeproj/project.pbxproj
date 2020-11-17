@@ -23,6 +23,8 @@
 		40B51A052562C28C00636463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A042562C28C00636463 /* Assets.xcassets */; };
 		40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A062562C28C00636463 /* LaunchScreen.storyboard */; };
 		40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */; };
+		40CC8E6C25631EA400C6C4E9 /* CoinListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC8E6B25631EA400C6C4E9 /* CoinListDataSource.swift */; };
+		40CC8E6F25637F7800C6C4E9 /* CoinIconURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC8E6E25637F7800C6C4E9 /* CoinIconURL.swift */; };
 		40D2EBD82563015A00B21932 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBD72563015A00B21932 /* Coin.swift */; };
 		40D2EBDA256303C800B21932 /* CoinGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBD9256303C800B21932 /* CoinGateway.swift */; };
 		40D2EBDD256303F000B21932 /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBDC256303F000B21932 /* ProviderService.swift */; };
@@ -67,6 +69,8 @@
 		40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoBitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinTests.swift; sourceTree = "<group>"; };
 		40B51A142562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CC8E6B25631EA400C6C4E9 /* CoinListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListDataSource.swift; sourceTree = "<group>"; };
+		40CC8E6E25637F7800C6C4E9 /* CoinIconURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinIconURL.swift; sourceTree = "<group>"; };
 		40D2EBD72563015A00B21932 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		40D2EBD9256303C800B21932 /* CoinGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGateway.swift; sourceTree = "<group>"; };
 		40D2EBDC256303F000B21932 /* ProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		4047EB7B2562E6640005B2C7 /* CoinList */ = {
 			isa = PBXGroup;
 			children = (
+				40CC8E6D25637F6700C6C4E9 /* Model */,
 				40D2EBE325630F6700B21932 /* Factory */,
 				40D2EBDE25630B2B00B21932 /* ViewModel */,
 				40D2EBD62562FFE000B21932 /* Service */,
@@ -185,6 +190,7 @@
 		4047EB832562E9480005B2C7 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				40CC8E6B25631EA400C6C4E9 /* CoinListDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -293,10 +299,18 @@
 			path = MercadoBitcoinTests;
 			sourceTree = "<group>";
 		};
-		40D2EBD62562FFE000B21932 /* Service */ = {
+		40CC8E6D25637F6700C6C4E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				40D2EBD72563015A00B21932 /* Coin.swift */,
+				40CC8E6E25637F7800C6C4E9 /* CoinIconURL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40D2EBD62562FFE000B21932 /* Service */ = {
+			isa = PBXGroup;
+			children = (
 				40D2EBD9256303C800B21932 /* CoinGateway.swift */,
 			);
 			path = Service;
@@ -490,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CC8E6F25637F7800C6C4E9 /* CoinIconURL.swift in Sources */,
 				4047EB892562EA3D0005B2C7 /* UITableView+Reusable.swift in Sources */,
 				4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */,
 				40D2EBE525630F8300B21932 /* CoinListViewControllerFactory.swift in Sources */,
@@ -506,6 +521,7 @@
 				40D2EBD82563015A00B21932 /* Coin.swift in Sources */,
 				4047EB962562F3C70005B2C7 /* LastPriceView.swift in Sources */,
 				4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */,
+				40CC8E6C25631EA400C6C4E9 /* CoinListDataSource.swift in Sources */,
 				4047EB932562F1140005B2C7 /* Int+SpacingUnit.swift in Sources */,
 				4047EB802562E6BC0005B2C7 /* UIView+Constraints.swift in Sources */,
 			);

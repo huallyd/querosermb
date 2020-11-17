@@ -16,28 +16,21 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
         
         return imageView
     }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        
+        return label
+    }()
+    
+    private lazy var valueLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .blue
+        
+        return label
+    }()
 
-    private let titleCoinLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .gray
-        
-        return label
-    }()
-    
-    private let mainValueLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        
-        return label
-    }()
-    
-    private let valueLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        
-        return label
-    }()
-    
     private let showDetailLabel: UILabel = {
         let label = UILabel()
         label.textColor = .blue
@@ -46,14 +39,14 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
     }()
 
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [titleCoinLabel, mainValueLabel, valueLabel, showDetailLabel])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, valueLabel, showDetailLabel])
         stackView.axis = .vertical
         stackView.spacing = 1.su
 
         return stackView
     }()
     
-    private let lastPriceView: LastPriceView = .init()
+//    private let lastPriceView: LastPriceView = .init()
 
     // MARK: Initializer
 
@@ -82,21 +75,21 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
             iconCoinImageView.widthAnchor.constraint(equalToConstant: 30)
         ])
         
-        addSubview(lastPriceView, constraints: [
-            lastPriceView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            lastPriceView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -1.su),
-        ])
-
         addSubview(stackView, constraints: [
             stackView.topAnchor.constraint(equalTo: iconCoinImageView.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: iconCoinImageView.trailingAnchor, constant: 1.su),
-            stackView.trailingAnchor.constraint(lessThanOrEqualTo: lastPriceView.leadingAnchor, constant: -1.su),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     
     // MARK: Function
     
-    
+    func bind(_ viewModel: CoinViewModel) {
+        titleLabel.text = viewModel.title
+        valueLabel.text = viewModel.currencyValue
+
+        viewModel.requestImage(of: iconCoinImageView)
+    }
 
 }

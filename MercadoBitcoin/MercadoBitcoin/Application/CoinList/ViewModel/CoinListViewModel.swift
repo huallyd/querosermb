@@ -17,6 +17,23 @@ struct CoinListViewModel {
         self.gateway = gateway
     }
     
+    // MARK: Private functions
+    
+    private func resquestImages(entities: [Coin], completion: @escaping ([CoinViewModel]) -> Void) {
+        gateway.requestUrls { result in
+            switch result {
+            case let .success(coinsUrl):
+                
+            completion(entities.map { (coin) -> CoinViewModel in
+                let url = (coinsUrl.first(where: {$0.id == coin.id}))?.url ?? ""
+                return .init(entity: coin, url: url)
+            })
+
+            case let .failure(error): break
+            }
+        }
+    }
+
     // MARK: Function
     
     func request(completion: @escaping ([CoinViewModel]) -> Void) {
@@ -24,6 +41,7 @@ struct CoinListViewModel {
             switch result {
             case let .success(coins):
                 completion(coins.map(CoinViewModel.init))
+                self.resquestImages(entities: coins, completion: completion)
             case .failure(_): break
             }
         }

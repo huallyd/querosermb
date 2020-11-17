@@ -9,6 +9,21 @@
 import UIKit
 
 final class CoinListViewController: BaseViewController {
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.showsVerticalScrollIndicator = false
+
+        return tableView
+    }()
+
+    private lazy var dataSource: CoinListDataSource = {
+        let didSelectCompletion: (CoinViewModel) -> Void = { [weak self] viewModel in
+            self?.didSelect(viewModel: viewModel)
+        }
+
+        return .init(tableView: tableView, didSelectCompletion: didSelectCompletion)
+    }()
 
     private lazy var viewModel: CoinListViewModel = .init(gateway: gateway)
 
@@ -41,13 +56,22 @@ final class CoinListViewController: BaseViewController {
     }
     
     private func setupLayout() {
-        
+        view.addSubview(tableView, constraints: [
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
+        ])
+    }
+
+    private func requestCoins() {
+        viewModel.request { [weak self] viewModels in
+            self?.dataSource.setup(viewModels: viewModels)
+        }
     }
     
-    private func requestCoins() {
-        viewModel.request { viewModel in
-            
-        }
+    private func didSelect(viewModel: CoinViewModel) {
+        
     }
 
 }
