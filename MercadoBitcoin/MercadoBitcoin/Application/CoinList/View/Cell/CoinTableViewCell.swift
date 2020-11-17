@@ -41,7 +41,7 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [titleLabel, valueLabel, showDetailLabel])
         stackView.axis = .vertical
-        stackView.spacing = 1.su
+        stackView.spacing = 0.5.su
 
         return stackView
     }()
@@ -69,17 +69,16 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
 
     private func setupLayout() {
         addSubview(iconCoinImageView, constraints: [
-            iconCoinImageView.topAnchor.constraint(equalTo: topAnchor, constant: 2.su),
+            iconCoinImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             iconCoinImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 2.su),
             iconCoinImageView.heightAnchor.constraint(equalToConstant: 30),
             iconCoinImageView.widthAnchor.constraint(equalToConstant: 30)
         ])
-        
+
         addSubview(stackView, constraints: [
-            stackView.topAnchor.constraint(equalTo: iconCoinImageView.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: iconCoinImageView.trailingAnchor, constant: 1.su),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            stackView.leadingAnchor.constraint(equalTo: iconCoinImageView.trailingAnchor, constant: 2.su),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2.su)
         ])
     }
     
