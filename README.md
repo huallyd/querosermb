@@ -1,3 +1,26 @@
+## Installation
+
+Este projeto faz uso do [CocoaPods](https://cocoapods.org). Tudo o que você precisa para configurá-lo corretamente é:
+
+```
+pod install
+```
+
+Se necessário, atualizar os repositórios do CocoaPods:
+
+```
+pod repo update
+```
+
+## Projeto
+
+Para os testes com snapshot foi utilizado a framework [snapshot](https://github.com/uber/ios-snapshot-test-case).
+
+É preciso que o simulador cumpra os seguintes requisitos para o sucesso desses testes:
+
+- iPhone 11;
+- Configurado em inglês;
+
 # Quero ser MB
 
 ### **O MB**
