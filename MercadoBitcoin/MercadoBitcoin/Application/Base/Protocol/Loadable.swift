@@ -53,9 +53,9 @@ extension Loadable where Self: BaseViewController {
     func showError(description: String) {
         let texts = Strings.Alert.Error.self
 
-        let alert = UIAlertController(title: texts.title, message: description,
+        let alert = UIAlertController(title: texts.title.localized, message: description,
                                       preferredStyle: .alert)
-        alert.addAction(.init(title: texts.action, style: .cancel))
+        alert.addAction(.init(title: texts.action.localized, style: .cancel))
 
         present(alert, animated: true)
     }
