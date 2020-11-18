@@ -6,3 +6,10 @@ strings:
     output: Strings.swift
     params:
       enumName: Strings
+
+xcassets:
+  - inputs: MercadoBitcoin/Resources/Assets.xcassets
+    templateName: swift5
+    output: Assets.swift
+    params:
+      enumName: Assets
