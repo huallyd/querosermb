@@ -30,8 +30,10 @@ final class StandardCoinGateway: CoinGateway {
     // MARK: CoinGateway conforms
 
     func requestCoins(completion: @escaping (Result<([Coin]), Error>) -> Void) {
-        provider.getRequest(url: baseUrl) { (result: Result<([Coin]), Error>)  in
-            completion(result)
+        provider.getRequest(url: baseUrl) { (result: Result<([Coin]), Error>) in
+            DispatchQueue.main.async {
+                completion(result)
+            }
         }
     }
     
@@ -39,7 +41,9 @@ final class StandardCoinGateway: CoinGateway {
         let url = baseUrl + "/icons/500"
         
         provider.getRequest(url: url) { (result: Result<([CoinIconURL]), Error>) in
-            completion(result)
+            DispatchQueue.main.async {
+                completion(result)
+            }
         }
     }
 

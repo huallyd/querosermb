@@ -5,3 +5,9 @@ target 'MercadoBitcoin' do
   pod 'Kingfisher', '~> 5.15'
   pod 'SwiftGen'
 end
+
+target "MercadoBitcoinTests" do
+  use_frameworks!
+
+  pod 'iOSSnapshotTestCase'
+end

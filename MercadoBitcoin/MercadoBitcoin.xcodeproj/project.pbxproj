@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4002597C25647752004597FC /* CoinGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002597B25647752004597FC /* CoinGatewayMock.swift */; };
+		4002597F2564792D004597FC /* CoinMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002597E2564792D004597FC /* CoinMock.swift */; };
+		4002598125648B6F004597FC /* CoinListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002598025648B6F004597FC /* CoinListViewModelTests.swift */; };
+		400259832564918C004597FC /* CoinIconURLMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400259822564918C004597FC /* CoinIconURLMock.swift */; };
 		40077DCC25638C9800C6ACBA /* UITableView+DeselectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40077DCB25638C9800C6ACBA /* UITableView+DeselectRow.swift */; };
+		400B7CFC25646480004E318A /* ProviderServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400B7CFB25646480004E318A /* ProviderServiceMock.swift */; };
+		401AD99F256473D200A4DF83 /* ImageServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD99E256473D200A4DF83 /* ImageServiceMock.swift */; };
+		401AD9A12564758600A4DF83 /* CoinListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD9A02564758600A4DF83 /* CoinListViewControllerTests.swift */; };
+		402AAD56256495F8007D0F74 /* CoinDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AAD55256495F8007D0F74 /* CoinDetailViewModelTests.swift */; };
+		402AAD5A25649A8F007D0F74 /* CoinDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */; };
 		4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */; };
 		4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB722562CCA30005B2C7 /* Coordinator.swift */; };
 		4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */; };
@@ -17,9 +26,8 @@
 		4047EB862562E9FE0005B2C7 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB852562E9FE0005B2C7 /* CoinTableViewCell.swift */; };
 		4047EB892562EA3D0005B2C7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB882562EA3D0005B2C7 /* UITableView+Reusable.swift */; };
 		4047EB932562F1140005B2C7 /* Int+SpacingUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB922562F1140005B2C7 /* Int+SpacingUnit.swift */; };
+		40B0AB642564609C009723C8 /* LoadableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0AB632564609C009723C8 /* LoadableMock.swift */; };
 		40B519FC2562C28200636463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FB2562C28200636463 /* AppDelegate.swift */; };
-		40B51A002562C28200636463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FF2562C28200636463 /* ViewController.swift */; };
-		40B51A032562C28200636463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A012562C28200636463 /* Main.storyboard */; };
 		40B51A052562C28C00636463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A042562C28C00636463 /* Assets.xcassets */; };
 		40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A062562C28C00636463 /* LaunchScreen.storyboard */; };
 		40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */; };
@@ -42,6 +50,7 @@
 		40F705B125641B09005A5C2E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B025641B09005A5C2E /* ImageService.swift */; };
 		40F705B325641EE8005A5C2E /* CoinDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B225641EE8005A5C2E /* CoinDetailViewControllerFactory.swift */; };
 		40F705B925645411005A5C2E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F705B825645411005A5C2E /* Loadable.swift */; };
+		7E7C23DDCF29970DE2D6DE3C /* Pods_MercadoBitcoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EC2740E76154C985D5BB09 /* Pods_MercadoBitcoinTests.framework */; };
 		7ECCE4AEFDE1EFE096139087 /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +65,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4002597B25647752004597FC /* CoinGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGatewayMock.swift; sourceTree = "<group>"; };
+		4002597E2564792D004597FC /* CoinMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMock.swift; sourceTree = "<group>"; };
+		4002598025648B6F004597FC /* CoinListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModelTests.swift; sourceTree = "<group>"; };
+		400259822564918C004597FC /* CoinIconURLMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinIconURLMock.swift; sourceTree = "<group>"; };
 		40077DCB25638C9800C6ACBA /* UITableView+DeselectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DeselectRow.swift"; sourceTree = "<group>"; };
+		400B7CFB25646480004E318A /* ProviderServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderServiceMock.swift; sourceTree = "<group>"; };
+		401AD99E256473D200A4DF83 /* ImageServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceMock.swift; sourceTree = "<group>"; };
+		401AD9A02564758600A4DF83 /* CoinListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewControllerTests.swift; sourceTree = "<group>"; };
+		402AAD55256495F8007D0F74 /* CoinDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModelTests.swift; sourceTree = "<group>"; };
+		402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		4047EB722562CCA30005B2C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCoordinator.swift; sourceTree = "<group>"; };
@@ -70,10 +88,9 @@
 		4047EB8F2562EC130005B2C7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		4047EB902562EC130005B2C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4047EB922562F1140005B2C7 /* Int+SpacingUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SpacingUnit.swift"; sourceTree = "<group>"; };
+		40B0AB632564609C009723C8 /* LoadableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableMock.swift; sourceTree = "<group>"; };
 		40B519F82562C28200636463 /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B519FB2562C28200636463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40B519FF2562C28200636463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40B51A022562C28200636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40B51A042562C28C00636463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40B51A072562C28C00636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40B51A092562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,8 +117,11 @@
 		40F705B025641B09005A5C2E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		40F705B225641EE8005A5C2E /* CoinDetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinDetailViewControllerFactory.swift; path = ../../../../../../../../../../CoinDetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		40F705B825645411005A5C2E /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		AD6D0E666A92E92D46E12C71 /* Pods-MercadoBitcoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoinTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
+		F681274BED36B598D1C3FABF /* Pods-MercadoBitcoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoinTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EC2740E76154C985D5BB09 /* Pods_MercadoBitcoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoin.debug.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoin/Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,12 +138,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7C23DDCF29970DE2D6DE3C /* Pods_MercadoBitcoinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4002597D25647915004597FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4002597E2564792D004597FC /* CoinMock.swift */,
+				400259822564918C004597FC /* CoinIconURLMock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		402AAD5725649A46007D0F74 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4002598025648B6F004597FC /* CoinListViewModelTests.swift */,
+				402AAD55256495F8007D0F74 /* CoinDetailViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		402AAD5825649A5A007D0F74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				401AD9A02564758600A4DF83 /* CoinListViewControllerTests.swift */,
+				402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4047EB6E2562CC650005B2C7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,8 +359,6 @@
 				4047EB8A2562EBA50005B2C7 /* Resources */,
 				4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */,
 				40B519FB2562C28200636463 /* AppDelegate.swift */,
-				40B519FF2562C28200636463 /* ViewController.swift */,
-				40B51A012562C28200636463 /* Main.storyboard */,
 				40B51A042562C28C00636463 /* Assets.xcassets */,
 				40B51A062562C28C00636463 /* LaunchScreen.storyboard */,
 				40B51A092562C28C00636463 /* Info.plist */,
@@ -404,6 +450,8 @@
 		40F705BA25645964005A5C2E /* CoinList */ = {
 			isa = PBXGroup;
 			children = (
+				402AAD5825649A5A007D0F74 /* Controller */,
+				402AAD5725649A46007D0F74 /* ViewModel */,
 				40F705BB25645995005A5C2E /* Mock */,
 			);
 			path = CoinList;
@@ -412,6 +460,11 @@
 		40F705BB25645995005A5C2E /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				4002597D25647915004597FC /* Models */,
+				40B0AB632564609C009723C8 /* LoadableMock.swift */,
+				400B7CFB25646480004E318A /* ProviderServiceMock.swift */,
+				401AD99E256473D200A4DF83 /* ImageServiceMock.swift */,
+				4002597B25647752004597FC /* CoinGatewayMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -421,6 +474,8 @@
 			children = (
 				FA57720E9A635F3170FFDD00 /* Pods-MercadoBitcoin.debug.xcconfig */,
 				E89337021FD4CCEA40A87923 /* Pods-MercadoBitcoin.release.xcconfig */,
+				F681274BED36B598D1C3FABF /* Pods-MercadoBitcoinTests.debug.xcconfig */,
+				AD6D0E666A92E92D46E12C71 /* Pods-MercadoBitcoinTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -429,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				BE85AEC797372CF53591FAD2 /* Pods_MercadoBitcoin.framework */,
+				F6EC2740E76154C985D5BB09 /* Pods_MercadoBitcoinTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -460,9 +516,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B51A1A2562C28C00636463 /* Build configuration list for PBXNativeTarget "MercadoBitcoinTests" */;
 			buildPhases = (
+				79C0B0FC5F1E4D69E66AFCAD /* [CP] Check Pods Manifest.lock */,
 				40B51A0A2562C28C00636463 /* Sources */,
 				40B51A0B2562C28C00636463 /* Frameworks */,
 				40B51A0C2562C28C00636463 /* Resources */,
+				83AD5A41BE69BE3713013343 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -521,7 +579,6 @@
 				40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */,
 				40F7059C25640AD6005A5C2E /* Localizable.strings in Resources */,
 				40B51A052562C28C00636463 /* Assets.xcassets in Resources */,
-				40B51A032562C28200636463 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +609,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
+		79C0B0FC5F1E4D69E66AFCAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MercadoBitcoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83AD5A41BE69BE3713013343 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		C8F5746E7C4446AFB05C924F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -607,7 +703,6 @@
 				40077DCC25638C9800C6ACBA /* UITableView+DeselectRow.swift in Sources */,
 				40D2EBE525630F8300B21932 /* CoinListViewControllerFactory.swift in Sources */,
 				40D2EBE225630DD100B21932 /* CoinViewModel.swift in Sources */,
-				40B51A002562C28200636463 /* ViewController.swift in Sources */,
 				40F705AF25641030005A5C2E /* DetailViews.swift in Sources */,
 				40F705AB25640EF1005A5C2E /* DetailViewModel.swift in Sources */,
 				40D2EBE025630B4400B21932 /* CoinListViewModel.swift in Sources */,
@@ -637,6 +732,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */,
+				400B7CFC25646480004E318A /* ProviderServiceMock.swift in Sources */,
+				402AAD56256495F8007D0F74 /* CoinDetailViewModelTests.swift in Sources */,
+				4002597F2564792D004597FC /* CoinMock.swift in Sources */,
+				4002598125648B6F004597FC /* CoinListViewModelTests.swift in Sources */,
+				401AD9A12564758600A4DF83 /* CoinListViewControllerTests.swift in Sources */,
+				400259832564918C004597FC /* CoinIconURLMock.swift in Sources */,
+				4002597C25647752004597FC /* CoinGatewayMock.swift in Sources */,
+				402AAD5A25649A8F007D0F74 /* CoinDetailViewControllerTests.swift in Sources */,
+				40B0AB642564609C009723C8 /* LoadableMock.swift in Sources */,
+				401AD99F256473D200A4DF83 /* ImageServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,14 +756,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40B51A012562C28200636463 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40B51A022562C28200636463 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		40B51A062562C28C00636463 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -833,6 +930,7 @@
 		};
 		40B51A1B2562C28C00636463 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F681274BED36B598D1C3FABF /* Pods-MercadoBitcoinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -854,6 +952,7 @@
 		};
 		40B51A1C2562C28C00636463 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6D0E666A92E92D46E12C71 /* Pods-MercadoBitcoinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
