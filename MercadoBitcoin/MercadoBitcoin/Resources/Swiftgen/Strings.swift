@@ -13,8 +13,14 @@ internal enum Strings {
 
   internal enum Alert {
     internal enum Error {
+      /// Ok!
+      internal static let action = Strings.tr("Localizable", "alert.error.action")
       /// Check your internet connection.
       internal static let networkDescription = Strings.tr("Localizable", "alert.error.networkDescription")
+      /// Try again.
+      internal static let othersDescription = Strings.tr("Localizable", "alert.error.othersDescription")
+      /// Error has occurred!
+      internal static let title = Strings.tr("Localizable", "alert.error.title")
     }
   }
 

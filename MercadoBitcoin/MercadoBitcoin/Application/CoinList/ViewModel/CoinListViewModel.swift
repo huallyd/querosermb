@@ -49,7 +49,9 @@ struct CoinListViewModel {
             case let .success(coins):
                 completion(coins.map(CoinViewModel.init))
                 self.resquestImages(entities: coins, completion: completion)
-            case .failure(_): break
+            case let .failure(error):
+                completion([])
+                self.loadable?.showError(description: error.localizedDescription)
             }
         }
     }

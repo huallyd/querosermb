@@ -9,11 +9,6 @@
 import UIKit
 import Alamofire
 
-enum ServiceError: Error {
-    case offline
-    case other
-}
-
 protocol ProviderService {
     func getRequest<T: Decodable>(url: String, completion: @escaping (Result<([T]), Error>) -> Void)
 }
@@ -34,17 +29,17 @@ struct AlamofireProviderService: ProviderService {
                 case .sessionTaskFailed(let sessionError):
                     if let urlError = sessionError as? URLError,
                         urlError.code == .notConnectedToInternet {
-                        completion(.failure(ServiceError.offline))
+                        completion(.failure(ValidationError.offline))
                         return
                     }
-                default: completion(.failure(ServiceError.other))
+                default: completion(.failure(ValidationError.other))
                 }
             } else if let data = response.data {
                 do {
                     let decoded = try self.jsonDecoder.decode(Array<T>.self, from: data)
                     completion(.success(decoded))
                 } catch {
-                    print(error.localizedDescription)
+                    completion(.failure(ValidationError.other))
                 }
             }
         }

@@ -88,8 +88,11 @@ final class CoinListViewController: BaseViewController {
 
     @objc private func requestCoins() {
         viewModel.request { [weak self] viewModels in
-            self?.dataSource.setup(viewModels: viewModels)
             self?.refreshControl.endRefreshing()
+            
+            if !viewModels.isEmpty {
+                self?.dataSource.setup(viewModels: viewModels)
+            }
         }
     }
 

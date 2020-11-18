@@ -54,14 +54,14 @@ final class CoinDetailViewController: BaseViewController {
             iconCoinImageView.heightAnchor.constraint(equalToConstant: 80),
             iconCoinImageView.widthAnchor.constraint(equalToConstant: 80)
         ])
-        
+
         view.addSubview(detailViews, constraints: [
             detailViews.topAnchor.constraint(equalTo: iconCoinImageView.bottomAnchor, constant: 3.su),
             detailViews.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 1.su),
             detailViews.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -1.su)
         ])
     }
-    
+
     private func requestImage() {
         viewModel.requestImage(of: iconCoinImageView)
     }

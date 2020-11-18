@@ -19,3 +19,5 @@
 
 "alert.error.title" = "Error has occurred!";
 "alert.error.networkDescription"= "Check your internet connection.";
+"alert.error.othersDescription"= "Try again.";
+"alert.error.action"= "Ok!";
