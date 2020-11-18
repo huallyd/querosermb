@@ -25,6 +25,11 @@ final class CoinListViewModelTests: XCTestCase {
         gateway.stubbedRequestUrlsCompletionResult = (.success(CoinIconURLMock.coinIcons), ())
     }
     
+    private func setupErrorResponse(validationError: ValidationError) {
+        gateway.stubbedRequestCoinsCompletionResult = (.failure(validationError), ())
+        gateway.stubbedRequestUrlsCompletionResult = (.failure(validationError), ())
+    }
+    
     func test_request_whenIsSuccess_receiveCoinViewModelsFormatted() {
         setupSuccessResponse()
     
@@ -35,6 +40,28 @@ final class CoinListViewModelTests: XCTestCase {
             XCTAssertEqual(viewModels.first!.valueDay, "$234.34")
             XCTAssertEqual(viewModels.first!.valueMonth, "$29.23")
         }
+    }
+    
+    func test_request_whenIsNetworkFailure_receiveDescription() {
+        setupErrorResponse(validationError: .offline)
+    
+        sut.request { _ in }
+        
+        let errors = Strings.Alert.Error.self
+        
+        XCTAssertTrue(loadable.invokedShowError)
+        XCTAssertEqual(loadable.invokedShowErrorParameters?.0, errors.networkDescription)
+    }
+    
+    func test_request_whenIsOthersFailure_receiveDescription() {
+        setupErrorResponse(validationError: .other)
+    
+        sut.request { _ in }
+        
+        let errors = Strings.Alert.Error.self
+        
+        XCTAssertTrue(loadable.invokedShowError)
+        XCTAssertEqual(loadable.invokedShowErrorParameters?.0, errors.othersDescription)
     }
     
     func test_request_callLoadableMethods() {
