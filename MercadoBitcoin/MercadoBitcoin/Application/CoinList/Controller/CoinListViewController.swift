@@ -20,7 +20,10 @@ final class CoinListViewController: BaseViewController {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = .black
         tableView.showsVerticalScrollIndicator = false
+        tableView.separatorColor = .white
+        tableView.separatorInset = .init(top: 0, left: 0, bottom: 0, right: 0)
 
         return tableView
     }()
@@ -71,7 +74,7 @@ final class CoinListViewController: BaseViewController {
     // MARK: Private functions
     
     private func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
     }
     
     private func setupLayout() {

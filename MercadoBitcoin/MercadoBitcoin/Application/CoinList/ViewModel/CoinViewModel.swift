@@ -63,6 +63,6 @@ struct CoinViewModel {
     // MARK: Function
 
     func requestImage(of imageView: UIImageView) {
-        imageService?.request(url: url, imageView: imageView)
+        imageService?.request(url: url, imageView: imageView, placeholderImage: UIImage(named: "placeholder-icon")!)
     }
 }

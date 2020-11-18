@@ -35,6 +35,10 @@ internal enum Strings {
   internal enum CoinList {
     /// Overview
     internal static let navigationTitle = Strings.tr("Localizable", "coinList.navigationTitle")
+    internal enum Cell {
+      /// Show detail
+      internal static let showDetail = Strings.tr("Localizable", "coinList.cell.showDetail")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

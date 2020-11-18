@@ -22,6 +22,7 @@ extension Loadable where Self: BaseViewController {
         lockView.tag = 999
 
         let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        activityIndicator.color = .orange
         activityIndicator.hidesWhenStopped = true
         activityIndicator.center = lockView.center
         activityIndicator.startAnimating()

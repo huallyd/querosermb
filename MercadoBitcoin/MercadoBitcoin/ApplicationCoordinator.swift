@@ -20,6 +20,19 @@ final class ApplicationCoordinator {
     init(window: UIWindow?) {
         self.window = window
         rootNavigationController = .init()
+        setupNavigationBar()
+    }
+    
+    // MARK: Private function
+    
+    private func setupNavigationBar() {
+        rootNavigationController.navigationBar.barTintColor = .orange
+        rootNavigationController.navigationBar.tintColor = .white
+        
+        rootNavigationController.navigationBar.titleTextAttributes = [
+            .font: UIFont.boldSystemFont(ofSize: 20),
+            .foregroundColor: UIColor.white
+        ]
     }
 
 }

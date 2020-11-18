@@ -7,6 +7,7 @@
 */
 
 "coinList.navigationTitle" = "Visão geral";
+"coinList.cell.showDetail" = "Ver detalhe";
 "coinDetail.navigationTitle" = "Detalhe";
 "coinDetail.title.id" = "ID:";
 "coinDetail.title.name" = "Nome:";

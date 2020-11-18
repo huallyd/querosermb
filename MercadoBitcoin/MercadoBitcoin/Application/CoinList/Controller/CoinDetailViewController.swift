@@ -44,19 +44,19 @@ final class CoinDetailViewController: BaseViewController {
     // MARK: Private functions
     
     private func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
     }
     
     private func setupLayout() {
         view.addSubview(iconCoinImageView, constraints: [
-            iconCoinImageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 2.su),
+            iconCoinImageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 3.su),
             iconCoinImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            iconCoinImageView.heightAnchor.constraint(equalToConstant: 50),
-            iconCoinImageView.widthAnchor.constraint(equalToConstant: 50)
+            iconCoinImageView.heightAnchor.constraint(equalToConstant: 80),
+            iconCoinImageView.widthAnchor.constraint(equalToConstant: 80)
         ])
         
         view.addSubview(detailViews, constraints: [
-            detailViews.topAnchor.constraint(equalTo: iconCoinImageView.bottomAnchor, constant: 1.su),
+            detailViews.topAnchor.constraint(equalTo: iconCoinImageView.bottomAnchor, constant: 3.su),
             detailViews.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 1.su),
             detailViews.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -1.su)
         ])

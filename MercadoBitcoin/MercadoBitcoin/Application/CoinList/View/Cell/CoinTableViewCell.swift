@@ -19,22 +19,26 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 18)
+        label.textColor = .white
         
         return label
     }()
     
     private lazy var valueLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .blue
+        label.font = .boldSystemFont(ofSize: 16)
+        label.textColor = .green
         
         return label
     }()
 
     private let showDetailLabel: UILabel = {
         let label = UILabel()
+        label.font = .boldSystemFont(ofSize: 14)
         label.textColor = .blue
-        
+        label.text = Strings.CoinList.Cell.showDetail
+
         return label
     }()
 
@@ -62,7 +66,7 @@ final class CoinTableViewCell: UITableViewCell, Reusable {
     // MARK: Private functions
 
     private func setupView() {
-        backgroundColor = .white
+        backgroundColor = .black
     }
 
     private func setupLayout() {

@@ -12,8 +12,8 @@ final class DetailView: UIView {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 16)
-        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 20)
+        label.textColor = .white
         label.text = viewModel.title
         
         return label
@@ -21,6 +21,7 @@ final class DetailView: UIView {
     
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
+        label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .gray
         label.numberOfLines = 0
         label.text = viewModel.description
@@ -56,7 +57,7 @@ final class DetailView: UIView {
     // MARK: Private functions
     
     private func setupView() {
-        backgroundColor = .white
+        backgroundColor = .clear
     }
  
     private func setupLayout() {

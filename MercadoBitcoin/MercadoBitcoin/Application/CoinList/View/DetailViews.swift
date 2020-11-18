@@ -40,7 +40,10 @@ final class DetailViews: UIView {
     // MARK: Private functions
     
     private func setupView() {
-        backgroundColor = .white
+        backgroundColor = .clear
+        layer.cornerRadius = 8
+        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 1
     }
     
     private func setupLayout() {

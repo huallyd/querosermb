@@ -84,10 +84,6 @@
 		4047EB7F2562E6BB0005B2C7 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		4047EB852562E9FE0005B2C7 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		4047EB882562EA3D0005B2C7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
-		4047EB8D2562EC130005B2C7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		4047EB8E2562EC130005B2C7 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		4047EB8F2562EC130005B2C7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		4047EB902562EC130005B2C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4047EB922562F1140005B2C7 /* Int+SpacingUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SpacingUnit.swift"; sourceTree = "<group>"; };
 		40B0AB632564609C009723C8 /* LoadableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableMock.swift; sourceTree = "<group>"; };
 		40B519F82562C28200636463 /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,29 +295,9 @@
 			isa = PBXGroup;
 			children = (
 				40F7059825640AB2005A5C2E /* Swiftgen */,
-				4047EB8B2562EBC30005B2C7 /* Font */,
 				40F7059E25640AD6005A5C2E /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		4047EB8B2562EBC30005B2C7 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				4047EB8C2562EBF80005B2C7 /* Montserrat */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		4047EB8C2562EBF80005B2C7 /* Montserrat */ = {
-			isa = PBXGroup;
-			children = (
-				4047EB8D2562EC130005B2C7 /* Montserrat-Bold.ttf */,
-				4047EB8F2562EC130005B2C7 /* Montserrat-Medium.ttf */,
-				4047EB902562EC130005B2C7 /* Montserrat-Regular.ttf */,
-				4047EB8E2562EC130005B2C7 /* Montserrat-SemiBold.ttf */,
-			);
-			path = Montserrat;
 			sourceTree = "<group>";
 		};
 		4047EB912562F0FB0005B2C7 /* Int */ = {
