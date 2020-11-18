@@ -26,6 +26,5 @@ final class CoinDetailViewControllerTests: FBSnapshotTestCase {
     func test_coinListViewController_view() {
         FBSnapshotVerifyView(sut.view)
     }
-
     
 }

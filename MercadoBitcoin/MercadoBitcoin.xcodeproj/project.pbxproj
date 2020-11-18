@@ -17,6 +17,7 @@
 		401AD9A12564758600A4DF83 /* CoinListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD9A02564758600A4DF83 /* CoinListViewControllerTests.swift */; };
 		402AAD56256495F8007D0F74 /* CoinDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AAD55256495F8007D0F74 /* CoinDetailViewModelTests.swift */; };
 		402AAD5A25649A8F007D0F74 /* CoinDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */; };
+		402AAD5D25649C1A007D0F74 /* CoinListViewCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AAD5C25649C1A007D0F74 /* CoinListViewCoordinatorTests.swift */; };
 		4047EB712562CC830005B2C7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */; };
 		4047EB732562CCA30005B2C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB722562CCA30005B2C7 /* Coordinator.swift */; };
 		4047EB752562D0560005B2C7 /* CoinListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */; };
@@ -30,7 +31,6 @@
 		40B519FC2562C28200636463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519FB2562C28200636463 /* AppDelegate.swift */; };
 		40B51A052562C28C00636463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A042562C28C00636463 /* Assets.xcassets */; };
 		40B51A082562C28C00636463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B51A062562C28C00636463 /* LaunchScreen.storyboard */; };
-		40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */; };
 		40CC8E6C25631EA400C6C4E9 /* CoinListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC8E6B25631EA400C6C4E9 /* CoinListDataSource.swift */; };
 		40CC8E6F25637F7800C6C4E9 /* CoinIconURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC8E6E25637F7800C6C4E9 /* CoinIconURL.swift */; };
 		40D2EBD82563015A00B21932 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2EBD72563015A00B21932 /* Coin.swift */; };
@@ -75,6 +75,7 @@
 		401AD9A02564758600A4DF83 /* CoinListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewControllerTests.swift; sourceTree = "<group>"; };
 		402AAD55256495F8007D0F74 /* CoinDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModelTests.swift; sourceTree = "<group>"; };
 		402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		402AAD5C25649C1A007D0F74 /* CoinListViewCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewCoordinatorTests.swift; sourceTree = "<group>"; };
 		4047EB702562CC830005B2C7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		4047EB722562CCA30005B2C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4047EB742562D0560005B2C7 /* CoinListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCoordinator.swift; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		40B51A072562C28C00636463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40B51A092562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B51A0E2562C28C00636463 /* MercadoBitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoBitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinTests.swift; sourceTree = "<group>"; };
 		40B51A142562C28C00636463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CC8E6B25631EA400C6C4E9 /* CoinListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListDataSource.swift; sourceTree = "<group>"; };
 		40CC8E6E25637F7800C6C4E9 /* CoinIconURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinIconURL.swift; sourceTree = "<group>"; };
@@ -170,6 +170,14 @@
 				402AAD5925649A8F007D0F74 /* CoinDetailViewControllerTests.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		402AAD5B25649BFD007D0F74 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				402AAD5C25649C1A007D0F74 /* CoinListViewCoordinatorTests.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		4047EB6E2562CC650005B2C7 /* Application */ = {
@@ -370,7 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				40F705BA25645964005A5C2E /* CoinList */,
-				40B51A122562C28C00636463 /* MercadoBitcoinTests.swift */,
 				40B51A142562C28C00636463 /* Info.plist */,
 			);
 			path = MercadoBitcoinTests;
@@ -450,6 +457,7 @@
 		40F705BA25645964005A5C2E /* CoinList */ = {
 			isa = PBXGroup;
 			children = (
+				402AAD5B25649BFD007D0F74 /* Coordinator */,
 				402AAD5825649A5A007D0F74 /* Controller */,
 				402AAD5725649A46007D0F74 /* ViewModel */,
 				40F705BB25645995005A5C2E /* Mock */,
@@ -731,7 +739,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B51A132562C28C00636463 /* MercadoBitcoinTests.swift in Sources */,
 				400B7CFC25646480004E318A /* ProviderServiceMock.swift in Sources */,
 				402AAD56256495F8007D0F74 /* CoinDetailViewModelTests.swift in Sources */,
 				4002597F2564792D004597FC /* CoinMock.swift in Sources */,
@@ -739,6 +746,7 @@
 				401AD9A12564758600A4DF83 /* CoinListViewControllerTests.swift in Sources */,
 				400259832564918C004597FC /* CoinIconURLMock.swift in Sources */,
 				4002597C25647752004597FC /* CoinGatewayMock.swift in Sources */,
+				402AAD5D25649C1A007D0F74 /* CoinListViewCoordinatorTests.swift in Sources */,
 				402AAD5A25649A8F007D0F74 /* CoinDetailViewControllerTests.swift in Sources */,
 				40B0AB642564609C009723C8 /* LoadableMock.swift in Sources */,
 				401AD99F256473D200A4DF83 /* ImageServiceMock.swift in Sources */,
