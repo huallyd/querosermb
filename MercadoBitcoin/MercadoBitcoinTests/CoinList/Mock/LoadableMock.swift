@@ -12,13 +12,19 @@ final class LoadableMock: Loadable {
 
     private(set) var invokedLoad = false
     private(set) var invokedUnload = false
-
-    func load() {
-        invokedLoad = true
-    }
+    private(set) var invokedShowError = false
+    private(set) var invokedShowErrorParameters: (description: String, Void)?
 
     func unload() {
         invokedUnload = true
     }
+    
+    func load() {
+        invokedLoad = true
+    }
 
+    func showError(description: String) {
+        invokedShowError = true
+        invokedShowErrorParameters = (description, ())
+    }
 }

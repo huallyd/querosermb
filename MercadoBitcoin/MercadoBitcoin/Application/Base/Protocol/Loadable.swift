@@ -11,6 +11,7 @@ import UIKit
 protocol Loadable: AnyObject {
     func load()
     func unload()
+    func showError(description: String)
 }
 
 extension Loadable where Self: BaseViewController {
@@ -47,6 +48,10 @@ extension Loadable where Self: BaseViewController {
                 lockView.removeFromSuperview()
             }
         }
+    }
+    
+    func showError(description: String) {
+//        let alertViewController = UIAlertController(title: <#T##String?#>, message: <#T##String?#>, preferredStyle: <#T##UIAlertController.Style#>)
     }
 
 }

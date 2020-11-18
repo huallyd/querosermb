@@ -16,3 +16,6 @@
 "coinDetail.title.volumeHour" = "Volume at hour:";
 "coinDetail.title.volumeDay" = "Volume at day:";
 "coinDetail.title.volumeMonth" = "Volume at month:";
+
+"alert.error.title" = "Error has occurred!";
+"alert.error.networkDescription"= "Check your internet connection.";

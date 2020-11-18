@@ -11,6 +11,13 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum Strings {
 
+  internal enum Alert {
+    internal enum Error {
+      /// Check your internet connection.
+      internal static let networkDescription = Strings.tr("Localizable", "alert.error.networkDescription")
+    }
+  }
+
   internal enum CoinDetail {
     /// Detail
     internal static let navigationTitle = Strings.tr("Localizable", "coinDetail.navigationTitle")

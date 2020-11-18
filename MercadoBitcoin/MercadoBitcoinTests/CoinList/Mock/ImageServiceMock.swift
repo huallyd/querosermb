@@ -13,11 +13,11 @@ import UIKit
 final class ImageServiceMock: ImageService {
 
     private(set) var invokedRequest = false
-    private(set) var invokedRequestParameters: (url: String?, imageView: UIImageView)?
+    private(set) var invokedRequestParameters: (url: String?, imageView: UIImageView, placeholderImage: UIImage)?
 
-    func request(url: String?, imageView: UIImageView) {
+    func request(url: String?, imageView: UIImageView, placeholderImage: UIImage) {
         invokedRequest = true
-        invokedRequestParameters = (url, imageView)
+        invokedRequestParameters = (url, imageView, placeholderImage)
     }
 
 }
